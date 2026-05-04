@@ -1,5 +1,12 @@
 # Codex Environment Worklog
 
+## 2026-05-04 - Claude Code Bridge Message Written
+
+- Created the Mac bridge folders under `/Users/tom/Documents/agent-bridge/`.
+- Wrote `/Users/tom/Documents/agent-bridge/claude-code/ForClaudeCode.md` explaining Codex's Google Docs bridge setup.
+- The message records the Codex OAuth JSON path, token path, helper path, redirect URI, read/write commands, and message protocol.
+- The bridge folder is local machine state; durable setup state remains in this repo.
+
 ## 2026-05-04 - Antigravity Installed On Mac
 
 - Installed Google Antigravity via Homebrew cask: `brew install --cask antigravity`.

@@ -14,6 +14,8 @@
 - Most work so far on Mac has been environment setup, not substantive NLM project execution.
 - Google Antigravity is installed on Mac at `/Applications/Antigravity.app`.
 - Antigravity Homebrew cask version is `1.23.2,4781536860569600`; CLI launcher is `/opt/homebrew/bin/agy`.
+- Local Mac bridge folder exists at `/Users/tom/Documents/agent-bridge/`.
+- Latest Claude Code message is `/Users/tom/Documents/agent-bridge/claude-code/ForClaudeCode.md`; it explains the Codex Google Docs bridge setup.
 
 ## Next Steps
 
@@ -46,3 +48,4 @@
 - Full `skill-creator` validation did not run because `yaml` is missing from the local Python environment.
 - Committed and pushed setup state to `origin/dev` at `1eadb3e`.
 - Installed Antigravity with `brew install --cask antigravity`; verified `Antigravity.app`, `brew list --cask --versions antigravity`, and `agy --version`.
+- Created `/Users/tom/Documents/agent-bridge/claude-code/ForClaudeCode.md` with the Codex Google Docs bridge setup for Claude Code.
