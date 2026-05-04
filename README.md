@@ -5,7 +5,7 @@ This repository is the portable Codex setup for Windows and Mac.
 It contains:
 
 - standing instructions in `AGENTS.md`
-- session state in `HANDOFF.md` and `Projects/nlm/WORKLOG.md`
+- session state in `HANDOFF.md`, `WORKLOG.md`, and `Projects/nlm/WORKLOG.md`
 - the NLM project docs under `Projects/nlm/`
 - shared bridge docs and tools
 - the local Codex skills in `.agents/skills/`
@@ -25,6 +25,7 @@ The goal is to let Codex on a Mac recreate the same working environment without 
 
 ## Skills Included
 
+- `codex-environment`
 - `google-docs-bridge`
 - `pre-compact`
 - `post-compact`

@@ -9,18 +9,37 @@ Use this skill when the session is about to compact or when Tom asks for a hando
 
 ## Workflow
 
-READ NOW: `C:\Users\tomew\Documents\codex-test\Projects\nlm\WORKLOG.md`
+Check context usage if visible. Tom prefers looking for a stopping point after about 50 percent used and logging/handoff by about 60 percent used.
 
-If anything notable completed since the last log entry, update the worklog first.
+Read the nearest relevant worklog:
+
+- repo-wide setup or skills: `WORKLOG.md`
+- NLM-specific work: `Projects/nlm/WORKLOG.md`
+
+If anything notable completed since the last log entry, update the worklog first. Notable work includes new or modified skills, bridge/auth setup, repo clone/pull/push changes, branch changes, and any setup state that should survive compaction.
+
+If the completed work should be backed up, update the repo before compacting:
+
+1. Check `git status --short --branch`.
+2. Review the diff for files changed in this session.
+3. Commit the durable changes with a concise message.
+4. Push the branch if a remote is configured and network access is available.
+5. If commit or push needs user approval or should be delayed, write that explicitly in the handoff.
 
 READ NOW: `references/handoff-template.md`
 
-Then refresh `C:\Users\tomew\Documents\codex-test\Projects\nlm\HANDOFF.md` so it emphasizes:
+Then refresh the relevant handoff:
+
+- repo-wide setup or skills: `HANDOFF.md`
+- NLM-specific work: `Projects/nlm/HANDOFF.md`
+
+The handoff should emphasize:
 
 - what we are working on right now
 - what was just completed
 - the latest context that matters most after compact
 - the next step, or an explicit note that no next step is queued
+- whether durable changes were committed and pushed
 
 ## Rule
 
