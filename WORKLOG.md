@@ -1,5 +1,12 @@
 # Codex Environment Worklog
 
+## 2026-05-03 - Handoff Set To NLM Validation
+
+- Refreshed `HANDOFF.md` after Mac setup was committed and pushed.
+- Recorded that the next objective is validating whether Mac Codex can run the NLM workflow.
+- The next session should check the Mac `nlm` CLI, NotebookLM auth, network access, and Mac path translations for source docs, downloads, dashboard files, and playlist config.
+- If Mac NLM validation fails, record the missing dependency or auth step and use Windows/Claude Code while the Windows machine is still available.
+
 ## 2026-05-03 - AGENTS Source Of Truth Context Added
 
 - Replaced the stub `AGENTS.md` with repo-wide operating instructions.
