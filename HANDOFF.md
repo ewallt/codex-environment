@@ -12,6 +12,8 @@
 - The Windows machine is available for about one more week, then is expected to be shut down for those five months.
 - Treat this Mac checkout and `ewallt/codex-environment` as the active source of truth for new Codex development.
 - Most work so far on Mac has been environment setup, not substantive NLM project execution.
+- Google Antigravity is installed on Mac at `/Applications/Antigravity.app`.
+- Antigravity Homebrew cask version is `1.23.2,4781536860569600`; CLI launcher is `/opt/homebrew/bin/agy`.
 
 ## Next Steps
 
@@ -43,3 +45,4 @@
 - Basic new-skill frontmatter checks passed.
 - Full `skill-creator` validation did not run because `yaml` is missing from the local Python environment.
 - Committed and pushed setup state to `origin/dev` at `1eadb3e`.
+- Installed Antigravity with `brew install --cask antigravity`; verified `Antigravity.app`, `brew list --cask --versions antigravity`, and `agy --version`.

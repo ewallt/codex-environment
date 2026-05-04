@@ -1,5 +1,14 @@
 # Codex Environment Worklog
 
+## 2026-05-04 - Antigravity Installed On Mac
+
+- Installed Google Antigravity via Homebrew cask: `brew install --cask antigravity`.
+- Verified `/Applications/Antigravity.app` exists.
+- Verified Homebrew reports `antigravity 1.23.2,4781536860569600`.
+- Verified the `agy` launcher exists at `/opt/homebrew/bin/agy`.
+- `agy --version` returned `1.107.0`, commit `15487b3041e65228cae24980a3f796c905ef582c`, architecture `arm64`.
+- The `agy --version` command printed an Electron macOS codesign warning but exited successfully.
+
 ## 2026-05-03 - Handoff Set To NLM Validation
 
 - Refreshed `HANDOFF.md` after Mac setup was committed and pushed.
