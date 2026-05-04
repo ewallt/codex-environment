@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.log
+*.tmp
+*.bak
+*.swp
+*.mp4
+*.mov
+*.token
+Projects/**/tmp/
