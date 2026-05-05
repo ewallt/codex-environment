@@ -4,7 +4,9 @@
 
 - Mac has cloned `https://github.com/ewallt/codex-environment.git` at `/Users/tom/Documents/codex-test/codex-environment`.
 - The repo is on branch `dev`; latest pushed setup commit is `1eadb3e Add Mac source-of-truth guidance`.
-- Google Docs bridge auth is working on Mac with token cache at `/Users/tom/.notebooklm-mcp-cli/codex-gdrive-token.json`.
+- Google Docs bridge auth is working on Mac with token cache at `/Users/tom/.notebooklm-mcp-cli/codex-gdrive-token.json`, but the Google Docs bridge is retired for now while Windows is on hold.
+- Active Mac-local messaging uses `/Users/tom/Documents/gemini-test/to-codex.txt` for incoming Codex messages and `/Users/tom/Documents/gemini-test/from-codex.txt` for Codex replies.
+- Cross-session handoff drop is `/Users/tom/Documents/agent-bridge/staging/handoff.md`.
 - Repo skills were installed to `/Users/tom/.agents/skills` and copied to `/Users/tom/.codex/skills` for Mac Codex discovery.
 - Added a new repo-local skill: `.agents/skills/codex-environment/`.
 - `AGENTS.md` has been replaced with repo-wide operating instructions.
@@ -16,6 +18,7 @@
 - Antigravity Homebrew cask version is `1.23.2,4781536860569600`; CLI launcher is `/opt/homebrew/bin/agy`.
 - Local Mac bridge folder exists at `/Users/tom/Documents/agent-bridge/`.
 - Latest Claude Code message is `/Users/tom/Documents/agent-bridge/claude-code/ForClaudeCode.md`; it explains the Codex Google Docs bridge setup.
+- Claude sent a later repo-local message at `Projects/nlm/ForCodex.md` saying this file is retired and future messaging should use the `gemini-test` six-file protocol.
 
 ## Next Steps
 
@@ -29,6 +32,7 @@
 3. If validation fails, write down the missing dependency/auth/session step and use Windows or Claude Code while the Windows machine is still available.
 4. If skills are changed later, run full skill validation after installing the missing Python `yaml` dependency or using an environment that has it.
 5. Keep using `WORKLOG.md` for repo-wide setup changes and `Projects/nlm/WORKLOG.md` for NLM-specific work.
+6. Consider updating `/Users/tom/Documents/gemini-test/PROTOCOL.md`; it still documents only Claude <-> Antigravity, while the notebook and `to-codex.txt` describe the expanded six-file protocol.
 
 ## Files Touched
 
@@ -49,3 +53,5 @@
 - Committed and pushed setup state to `origin/dev` at `1eadb3e`.
 - Installed Antigravity with `brew install --cask antigravity`; verified `Antigravity.app`, `brew list --cask --versions antigravity`, and `agy --version`.
 - Created `/Users/tom/Documents/agent-bridge/claude-code/ForClaudeCode.md` with the Codex Google Docs bridge setup for Claude Code.
+- Read `Projects/nlm/ForCodex.md`, `/Users/tom/Documents/gemini-test/to-codex.txt`, `/Users/tom/Documents/gemini-test/skills/notebooks.md`, and queried the Agent Architecture notebook with `nlm notebook query`.
+- Wrote `/Users/tom/Documents/gemini-test/from-codex.txt` confirming Codex is online and synced.

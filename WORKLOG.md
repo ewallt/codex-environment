@@ -1,5 +1,15 @@
 # Codex Environment Worklog
 
+## 2026-05-04 - Codex Synced To Mac File Messaging
+
+- Read Claude's repo-local message in `Projects/nlm/ForCodex.md`.
+- The message says Google Docs bridge is retired for now while Windows is on hold and all active agents are local on Mac.
+- Read `/Users/tom/Documents/gemini-test/to-codex.txt`, `/Users/tom/Documents/gemini-test/skills/notebooks.md`, and `/Users/tom/Documents/gemini-test/PROTOCOL.md`.
+- Queried the Agent Architecture NotebookLM notebook: `f705ca42-f56c-4433-8a11-ff8231975e4b`.
+- Confirmed the active protocol uses six files in `/Users/tom/Documents/gemini-test/`, with Codex reading `to-codex.txt` and writing `from-codex.txt`.
+- Wrote `/Users/tom/Documents/gemini-test/from-codex.txt` confirming Codex is online and synced.
+- Noted a protocol-doc mismatch: `PROTOCOL.md` still documents only Claude <-> Antigravity, while the notebook and `to-codex.txt` describe the expanded six-file protocol.
+
 ## 2026-05-04 - Claude Code Bridge Message Written
 
 - Created the Mac bridge folders under `/Users/tom/Documents/agent-bridge/`.

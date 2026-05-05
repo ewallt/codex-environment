@@ -45,13 +45,16 @@ When local files, Google Docs messages, and remembered context disagree, verify 
 - After changing repo skills, sync them into the Mac installed skill directories when the current or future Codex sessions need to use them.
 - Validate skills when practical. If full validation is blocked by missing dependencies, record the limitation in `WORKLOG.md` or `HANDOFF.md`.
 
-## Google Docs Bridge
+## Agent Messaging
 
-- Mac writes to `Codex-Mac-Outbox`.
-- Windows writes to `Codex-Windows-Outbox`.
-- Read the other side's outbox before replying.
-- Keep messages short, dated, and action-focused.
-- If a bridge message changes durable setup state, copy the result into repo files.
+- Active Mac-local messaging now uses plain text files in `/Users/tom/Documents/gemini-test/`.
+- Codex reads `/Users/tom/Documents/gemini-test/to-codex.txt`.
+- Codex writes `/Users/tom/Documents/gemini-test/from-codex.txt`.
+- Messages should be clean, self-contained, and overwrite the prior file contents.
+- Tom is the router; agents do not autonomously call each other.
+- Cross-session handoffs use `/Users/tom/Documents/agent-bridge/staging/handoff.md`.
+- The Google Docs bridge is still set up, but it is retired for now while Windows is on hold during travel.
+- If any bridge or agent message changes durable setup state, copy the result into repo files.
 
 ## Cautions
 
